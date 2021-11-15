@@ -7,10 +7,15 @@
 x = 5
 
 function double(num) {
+  if(typeof(num) !== 'number') {
+    console.log('Input enetered is not a number')
+    return;
+  }
   return num * 2;
 }
 
 double(6);
+console.log(double('Batman'));
 console.log('The value of x is', x, '-- it should be 5.');
 
 /*
